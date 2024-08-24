@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Patrick Hand SC", sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 20px;
+  background-color: white;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: black;
+}
+
+.container .fan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+}
+
+.fan .switch {
+  border: 3px solid white;
+  border-radius: 12px;
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.container .text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 15px;
+}
+
+.container .text h1 {
+  color: crimson;
+  font-weight: bold;
+}
+
+.container .text p {
+  font-size: 1.2rem;
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 560px) {
+  .container {
+    flex-direction: column;
+  }
+}
